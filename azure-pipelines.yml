@@ -29,7 +29,7 @@ variables:
   vmImageName: 'ubuntu-latest'
 
 steps:
-- checkout: https://Kothakota540@bitbucket.org/raja208/wifi-reportsss.git
+- checkout: git://https://Kothakota540@bitbucket.org/raja208/wifi-reportsss.git
 # - checkout: MyGitHubRepo
 # - checkout: MyBitbucketRepo
 # - checkout: MyAzureReposGitRepository
