@@ -34,6 +34,11 @@ steps:
 # - checkout: MyBitbucketRepo
 # - checkout: MyAzureReposGitRepository
 
+
+
+
+
+
 # stages:
 # - stage: Build
 #   displayName: Build stage
@@ -62,11 +67,14 @@ steps:
 #         targetPath: $(Build.ArtifactStagingDirectory)
 
 # - stage: Deploy
-#   displayName: Deploy stage
-#   dependsOn: Build
-#   condition: succeeded()
-#   jobs:
-#   - deployment: DeployLinuxWebApp
+#   displayName: Deploy stage- task: AzureCLI@2
+
+
+  inputs:
+    azureSubscription: 'Free Trial(664b9e40-2f3d-4dea-8b3a-53f07c97a9ae)'
+    scriptType: 'ps'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'ls azure rg'
 #     displayName: Deploy Linux Web App
 #     environment: 'development'
 #     pool: 
