@@ -9,7 +9,7 @@ resources:
   - repository: wifi-reportsss # The name used to reference this repository in the checkout step
     type: git
     endpoint: bitbucket
-    name: Smartwifi/wifi-reportsss
+    name: raja/Smartwifi/wifi-reportsss
 
 
 
