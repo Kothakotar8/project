@@ -4,12 +4,12 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 
-resources:
-  repositories:
-  - repository: wifi-reportsss # The name used to reference this repository in the checkout step
-    type: git
-    endpoint: bitbucket
-    name: raja/Smartwifi/wifi-reportsss
+# resources:
+#   repositories:
+#   - repository: wifi-reportsss # The name used to reference this repository in the checkout step
+#     type: git
+#     endpoint: bitbucket
+#     name: raja/Smartwifi/wifi-reportsss
 
 
 
@@ -29,7 +29,7 @@ variables:
   vmImageName: 'ubuntu-latest'
 
 steps:
-- checkout: wifi-reportsss
+- checkout: https://Kothakota540@bitbucket.org/raja208/wifi-reportsss.git
 # - checkout: MyGitHubRepo
 # - checkout: MyBitbucketRepo
 # - checkout: MyAzureReposGitRepository
