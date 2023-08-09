@@ -70,11 +70,13 @@ steps:
 #   displayName: Deploy stage- task: AzureCLI@2
 
 
+- task: AzureCLI@2
   inputs:
     azureSubscription: 'Free Trial(664b9e40-2f3d-4dea-8b3a-53f07c97a9ae)'
     scriptType: 'ps'
     scriptLocation: 'inlineScript'
     inlineScript: 'ls azure rg'
+
 #     displayName: Deploy Linux Web App
 #     environment: 'development'
 #     pool: 
